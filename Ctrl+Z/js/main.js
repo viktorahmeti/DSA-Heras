@@ -40,7 +40,6 @@ controls.forEach((control) => {
 let saveButton = document.getElementById("saveButton");
 
 let savedStates = [];
-let redoStack = [];
 
 saveButton.onclick = () => {
     savedStates.push(JSON.parse(JSON.stringify(state)));
@@ -54,19 +53,7 @@ previousButton.onclick = () => {
     let previousState = savedStates.pop();
 
     if(previousState){
-        redoStack.push(JSON.parse(JSON.stringify(state)));
         updateState(previousState);
-    }
-}
-
-let redoButton = document.getElementById("redoButton");
-
-redoButton.onclick = () => {
-    let s = redoStack.pop();
-
-    if(s){
-        savedStates.push(JSON.parse(JSON.stringify(s)));
-        updateState(s);
     }
 }
 
