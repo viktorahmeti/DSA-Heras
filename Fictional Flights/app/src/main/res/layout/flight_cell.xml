@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/flight_cell"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/flight_cell_from"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Prishtine"
+        android:textSize="20dp"
+        android:paddingBottom="10dp"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/flight_cell_to"
+        app:layout_constraintTop_toBottomOf="@+id/flight_cell_from"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Tirane"
+        android:textSize="20dp"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/flight_cell_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="200€"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        ></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

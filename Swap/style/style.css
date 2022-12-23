@@ -1,0 +1,72 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: #987e72;
+    border-radius: 10px;
+}
+
+.selection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+}
+
+.search{
+    padding: 0.5em;
+}
+
+.search button{
+    width: 100%;
+    font-size: 1em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 7px;
+    background-color: #7ca082;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.city-selection{
+    background-color: #e6e6e6;
+    border-radius: 7px;
+    padding: 1em;
+    font-size: 1.5em;
+    appearance: none;
+    border: none;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+.city-selection:hover{
+    opacity: 0.8;
+}   
+
+#swap{
+    background-color: #e6e6e6;
+    padding: 0.5em;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#swap:hover{
+    opacity: 0.8;
+}

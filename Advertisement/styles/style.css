@@ -1,0 +1,35 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(60, 60, 60);
+}
+
+video, #interrupt{
+    border-radius: 30px;
+}
+
+main{
+    position: relative;
+}
+
+#interrupt{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: all;
+    display: none;
+    background-size: cover;
+    background-position: center;
+    background-size: 110%;
+}

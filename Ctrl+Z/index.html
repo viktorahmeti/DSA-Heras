@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undo</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="photo-container">
+        <img src="une.jpeg" alt="A picture of a person smiling" width="400px" height="400px" id="photo">
+        <button id="resetButton">Reset</button>
+    </div>
+
+    <div class="controls-container">
+        <div class="control-container">
+            <label for="brightness">Brightness</label>
+            <input type="range" min="0" max="200" name="" value="100" id="brightness">
+        </div>
+        <div class="control-container">
+            <label for="contrast">Contrast</label>
+            <input type="range" min="0" max="200" name="" value="100" id="contrast">
+        </div>
+        <div class="control-container">
+            <label for="blur">Blur</label>
+            <input type="range" min="0" max="10" name="" value="0" id="blur">
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button id="saveButton">Save Version</button>
+        <button id="previousButton">Undo</button>
+        <button id="redoButton">Redo</button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

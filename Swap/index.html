@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plane Tickets</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <main>
+        <div class="selection">
+            <select class="city-selection" id="from">
+                <option value="" disabled selected>from</option>
+                <option value="prishtina">Prishtina</option>
+                <option value="gjilan">Gjilan</option>
+                <option value="mitrovice">Mitrovice</option>
+                <option value="prizren">Prizren</option>
+                <option value="gjakove">Gjakove</option>
+                <option value="peje">Peje</option>
+            </select>
+            <div id="swap">
+                <img src="assets/swap.png" width="30px" alt="swap directions" style="display: block;">
+            </div>
+            <select class="city-selection" id="to">
+                <option value="" disabled selected>to</option>
+                <option value="prishtina">Prishtina</option>
+                <option value="gjilan">Gjilan</option>
+                <option value="mitrovice">Mitrovice</option>
+                <option value="prizren">Prizren</option>
+                <option value="gjakove">Gjakove</option>
+                <option value="peje">Peje</option>
+            </select>
+        </div>
+        <div class="search">
+            <button>Search</button>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
